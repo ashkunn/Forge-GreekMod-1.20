@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "greekmod:bronze"
+    }
+  },
+  "result": {
+    "item": "greekmod:bronze_block"
+  }
+}

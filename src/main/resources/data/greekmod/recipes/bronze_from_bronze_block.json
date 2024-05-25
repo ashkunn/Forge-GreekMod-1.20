@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+    "item": "greekmod:bronze_block"
+    }
+  ],
+  "result": {
+    "item":"greekmod:bronze",
+    "count": 9
+  }
+}

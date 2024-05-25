@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "greekmod:block/bronze_block"
+    }
+  }
+}

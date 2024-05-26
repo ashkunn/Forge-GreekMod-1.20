@@ -1,0 +1,7 @@
+// 1.20.2	2024-05-26T01:25:07.569051	Block States: greekmod
+6a718a6689925a82341ec60fa7e849eb1e09db77 assets/greekmod/blockstates/bronze_block.json
+def91e3b0cc8068794bedd3a613bc32e50363edc assets/greekmod/blockstates/tin_ore.json
+70182aedf1f5e83b50f9e18c8029d8dc31e3510c assets/greekmod/models/block/bronze_block.json
+3491049ea48ca52a8a39e1253e3b5ced5cfbfc94 assets/greekmod/models/block/tin_ore.json
+94396567f0700fea993b2019e06b5bae470b9de0 assets/greekmod/models/item/bronze_block.json
+7e040386c244f09f99e37a5b5306d6e787178904 assets/greekmod/models/item/tin_ore.json

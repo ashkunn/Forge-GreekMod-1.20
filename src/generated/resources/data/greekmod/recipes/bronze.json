@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-    "item": "greekmod:bronze_block"
+      "item": "greekmod:bronze_block"
     }
   ],
   "result": {
-    "item":"greekmod:bronze",
-    "count": 9
+    "count": 9,
+    "item": "greekmod:bronze"
   }
 }

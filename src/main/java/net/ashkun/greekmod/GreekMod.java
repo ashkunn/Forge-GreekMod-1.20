@@ -60,6 +60,11 @@ public class GreekMod
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.BRONZE_BLOCK);
         }
+        if(event.getTabKey() == CreativeModeTabs.COMBAT){
+            event.accept(ModItems.BRONZE_BOOTS);
+            event.accept(ModItems.BRONZE_CHESTPLATE);
+            event.accept(ModItems.BRONZE_HELMET);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

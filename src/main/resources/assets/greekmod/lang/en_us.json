@@ -2,6 +2,10 @@
   "item.greekmod.bronze": "Bronze Ingot",
   "item.greekmod.tin": "Tin Ingot",
 
+  "item.greekmod.bronze_helmet": "Bronze Helmet",
+  "item.greekmod.bronze_chestplate": "Bronze Chestplate",
+  "item.greekmod.bronze_boots": "Bronze Boots",
+
   "block.greekmod.tin_ore": "Tin Ore",
 
   "block.greekmod.bronze_block": "Block of Bronze"

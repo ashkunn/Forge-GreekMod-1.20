@@ -6,6 +6,10 @@
   "item.greekmod.bronze_chestplate": "Bronze Chestplate",
   "item.greekmod.bronze_boots": "Bronze Boots",
 
+  "item.greekmod.javelin": "Javelin",
+  "item.greekmod.xiphos": "Xiphos",
+  "item.greekmod.kopis": "Kopis",
+
   "block.greekmod.tin_ore": "Tin Ore",
 
   "block.greekmod.bronze_block": "Block of Bronze"

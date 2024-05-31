@@ -64,6 +64,9 @@ public class GreekMod
             event.accept(ModItems.BRONZE_BOOTS);
             event.accept(ModItems.BRONZE_CHESTPLATE);
             event.accept(ModItems.BRONZE_HELMET);
+            event.accept(ModItems.JAVELIN);
+            event.accept(ModItems.XIPHOS);
+            event.accept(ModItems.KOPIS);
         }
     }
 

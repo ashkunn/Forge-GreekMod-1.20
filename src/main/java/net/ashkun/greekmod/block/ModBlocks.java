@@ -1,6 +1,8 @@
 package net.ashkun.greekmod.block;
 
 import net.ashkun.greekmod.GreekMod;
+import net.ashkun.greekmod.block.custom.BarleyCropBlock;
+import net.ashkun.greekmod.block.custom.GrapeVineBlock;
 import net.ashkun.greekmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -23,11 +25,24 @@ public class ModBlocks {
     public static final RegistryObject<Block> BRONZE_BLOCK = registerBlock("bronze_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
+    public static final RegistryObject<Block> BARLEY_CROP = BLOCKS.register("barley_crop",
+            () -> new BarleyCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+
+
+    public static final RegistryObject<Block> GRAPEVINEBLOCK = registerBlock("grapevineblock",
+            () -> new GrapeVineBlock(BlockBehaviour.Properties.copy(Blocks.VINE).noOcclusion().noCollission()));
+
+
+
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier <T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
         return toReturn;
     }
+
+
+
 
     private static <T extends  Block>RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block){
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));

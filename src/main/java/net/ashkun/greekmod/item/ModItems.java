@@ -1,8 +1,10 @@
 package net.ashkun.greekmod.item;
 
 import net.ashkun.greekmod.GreekMod;
+import net.ashkun.greekmod.block.ModBlocks;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.SwordItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -33,6 +35,14 @@ public class ModItems {
             () -> new SwordItem(ModToolTiers.BRONZE, 5, 2, new Item.Properties()));
     public static final RegistryObject<Item> KOPIS = ITEMS.register("kopis",
             () -> new SwordItem(ModToolTiers.BRONZE, 5, 2, new Item.Properties()));
+
+
+    public static final RegistryObject<Item> BARLEY_SEEDS = ITEMS.register("barley_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.BARLEY_CROP.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> BARLEY = ITEMS.register("barley", ()-> new Item(new Item.Properties()));
+
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }

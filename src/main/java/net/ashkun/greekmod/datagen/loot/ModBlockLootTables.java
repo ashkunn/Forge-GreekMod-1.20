@@ -1,5 +1,8 @@
 package net.ashkun.greekmod.datagen.loot;
 
+import net.ashkun.greekmod.block.custom.BarleyCropBlock;
+import net.ashkun.greekmod.block.custom.GrapeVineBlock;
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlag;
@@ -13,6 +16,8 @@ import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
 import net.ashkun.greekmod.block.ModBlocks;
@@ -35,6 +40,19 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         //this.add(ModBlocks.SAPPHIRE_ORE.get(), block -> createCopperLikeOreDrops(ModBlocks.SAPPHIRE_ORE.get(), ModItems.RAW_SAPPHIRE.get()));
 
+
+
+        LootItemCondition.Builder lootitemcondition$builder = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.BARLEY_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(BarleyCropBlock.AGE,4));
+
+        LootItemCondition.Builder lootitemcondition$builder2 = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.GRAPEVINEBLOCK.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(GrapeVineBlock.AGE,4));
+
+        this.add(ModBlocks.BARLEY_CROP.get(),createCropDrops(ModBlocks.BARLEY_CROP.get(),ModItems.BARLEY.get(), ModItems.BARLEY_SEEDS.get(), lootitemcondition$builder));
+
+        this.add(ModBlocks.GRAPEVINEBLOCK.get(),createCropDrops(ModBlocks.GRAPEVINEBLOCK.get(),ModItems.BARLEY.get(), ModItems.BARLEY_SEEDS.get(), lootitemcondition$builder));
 
 
 

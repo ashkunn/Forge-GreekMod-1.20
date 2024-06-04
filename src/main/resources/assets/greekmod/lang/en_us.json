@@ -12,5 +12,7 @@
 
   "block.greekmod.tin_ore": "Tin Ore",
 
-  "block.greekmod.bronze_block": "Block of Bronze"
+  "block.greekmod.bronze_block": "Block of Bronze",
+
+  "creativetab.tutorial_tab": "Sapphire Tutorial Tab"
 }

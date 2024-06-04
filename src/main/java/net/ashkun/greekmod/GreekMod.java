@@ -77,6 +77,7 @@ public class GreekMod
             event.accept(ModItems.JAVELIN);
             event.accept(ModItems.XIPHOS);
             event.accept(ModItems.KOPIS);
+            event.accept(ModBlocks.GRAPEVINEBLOCK);
         }
     }
 

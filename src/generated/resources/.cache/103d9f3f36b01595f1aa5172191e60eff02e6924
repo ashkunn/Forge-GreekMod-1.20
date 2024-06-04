@@ -1,0 +1,4 @@
+// 1.20.2	2024-06-03T17:42:21.198502	Registries
+c0046ae1fa16210b15b03299a694d01a30f6362c data/greekmod/forge/biome_modifier/add_tin_ore.json
+5bcfa6a53a03519e277b2a25b242288b01b33cfd data/greekmod/worldgen/configured_feature/tin_ore.json
+e77f9ee6d1a0cdbc39a7d4bcefe9db0c70a56f92 data/greekmod/worldgen/placed_feature/tin_ore_placed.json

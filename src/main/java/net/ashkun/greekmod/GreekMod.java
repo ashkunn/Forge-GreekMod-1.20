@@ -3,17 +3,25 @@ package net.ashkun.greekmod;
 import com.mojang.logging.LogUtils;
 import net.ashkun.greekmod.block.ModBlocks;
 import net.ashkun.greekmod.item.ModItems;
+import net.ashkun.greekmod.worldgen.ModBiomeModifiers;
+import net.ashkun.greekmod.worldgen.ModConfiguredFeatures;
+import net.ashkun.greekmod.worldgen.ModPlacedFeatures;
 import net.minecraft.client.Minecraft;
+import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.Bootstrap;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FurnaceBlock;
+import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
+import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraft.world.level.storage.LevelResource;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.CreativeModeTabRegistry;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.world.BiomeModifier;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerAboutToStartEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -52,8 +60,7 @@ public class GreekMod
         modEventBus.addListener(this::addCreative);
         }
 
-    private void commonSetup(final FMLCommonSetupEvent event)
-    {
+    private void commonSetup(final FMLCommonSetupEvent event) {
 
     }
 
@@ -66,6 +73,15 @@ public class GreekMod
         }
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS){
             event.accept(ModBlocks.TIN_ORE);
+            event.accept(ModBlocks.SALT_ORE);
+
+            event.accept(ModBlocks.PINE_LOG);
+            event.accept(ModBlocks.PINE_WOOD);
+            event.accept(ModBlocks.STRIPPED_PINE_LOG);
+            event.accept(ModBlocks.STRIPPED_PINE_WOOD);
+
+            event.accept(ModBlocks.PINE_PLANKS);
+            event.accept(ModBlocks.PINE_LEAVES);
         }
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.BRONZE_BLOCK);
@@ -74,9 +90,14 @@ public class GreekMod
             event.accept(ModItems.BRONZE_BOOTS);
             event.accept(ModItems.BRONZE_CHESTPLATE);
             event.accept(ModItems.BRONZE_HELMET);
+
             event.accept(ModItems.JAVELIN);
             event.accept(ModItems.XIPHOS);
             event.accept(ModItems.KOPIS);
+        }
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
+            event.accept(ModItems.BARLEY);
+            event.accept(ModItems.BARLEY_SEEDS);
             event.accept(ModBlocks.GRAPEVINEBLOCK);
         }
     }

@@ -37,7 +37,14 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 //
 //        //this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL).add(ModBlock.RAW_SAPPHIRE_BLOCK.get());
 
+    this.tag(BlockTags.LOGS_THAT_BURN)
+            .add(ModBlocks.PINE_LOG.get())
+            .add(ModBlocks.PINE_WOOD.get())
+            .add(ModBlocks.STRIPPED_PINE_LOG.get())
+            .add(ModBlocks.STRIPPED_PINE_WOOD.get());
 
+    this.tag(BlockTags.PLANKS)
+            .add(ModBlocks.PINE_PLANKS.get());
 
     }
 }

@@ -10,9 +10,20 @@
   "item.greekmod.xiphos": "Xiphos",
   "item.greekmod.kopis": "Kopis",
 
+  "item.greekmod.barley": "Barley",
+  "item.greekmod.barley_seeds": "Barley Seeds",
+
+  "block.greekmod.salt_ore": "Salt Ore",
   "block.greekmod.tin_ore": "Tin Ore",
 
   "block.greekmod.bronze_block": "Block of Bronze",
+
+  "block.greekmod.pine_log": "Pine Log",
+  "block.greekmod.pine_planks": "Pine Planks",
+  "block.greekmod.pine_wood": "Pine Wood",
+  "block.greekmod.stripped_pine_log": "Stripped Pine Log",
+  "block.greekmod.stripped_pine_wood": "Stripped Pine Wood",
+  "block.greekmod.pine_leaves": "Pine Leaves",
 
   "creativetab.tutorial_tab": "Sapphire Tutorial Tab"
 }

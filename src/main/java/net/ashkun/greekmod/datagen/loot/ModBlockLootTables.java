@@ -54,6 +54,16 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.GRAPEVINEBLOCK.get(),createCropDrops(ModBlocks.GRAPEVINEBLOCK.get(),ModItems.BARLEY.get(), ModItems.BARLEY_SEEDS.get(), lootitemcondition$builder));
 
+        this.dropSelf(ModBlocks.PINE_LOG.get());
+        this.dropSelf(ModBlocks.PINE_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_PINE_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_PINE_WOOD.get());
+        this.dropSelf(ModBlocks.PINE_PLANKS.get());
+
+        this.add(ModBlocks.PINE_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.BRONZE_BLOCK.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+
 
 
     }

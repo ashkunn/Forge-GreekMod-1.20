@@ -5,10 +5,13 @@ import net.ashkun.greekmod.block.ModBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
+import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.ashkun.greekmod.GreekMod;
+import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -28,8 +31,11 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.STRIPPED_PINE_LOG.get().asItem())
                 .add(ModBlocks.STRIPPED_PINE_WOOD.get().asItem());
 
+
         this.tag(ItemTags.PLANKS)
                 .add(ModBlocks.PINE_PLANKS.get().asItem());
 
     }
+
+
 }

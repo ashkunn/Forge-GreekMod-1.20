@@ -82,6 +82,8 @@ public class GreekMod
 
             event.accept(ModBlocks.PINE_PLANKS);
             event.accept(ModBlocks.PINE_LEAVES);
+
+            event.accept(ModBlocks.PINE_SAPLING);
         }
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.BRONZE_BLOCK);

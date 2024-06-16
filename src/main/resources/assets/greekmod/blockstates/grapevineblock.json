@@ -4,7 +4,7 @@
       "model": "greekmod:block/grapevinegrown0"
     },
     "age=0,east=false,north=false,south=false,up=false,west=true": {
-      "model": "greekmod:block/grapevinegrown0"
+      "model": "greekmod:block/grapevinegrown0", "y": 90
     },
     "age=0,east=false,north=false,south=false,up=true,west=false": {
       "model": "greekmod:block/grapevinegrown0"
@@ -16,7 +16,7 @@
       "model": "greekmod:block/grapevinegrown0"
     },
     "age=0,east=false,north=false,south=true,up=false,west=true": {
-      "model": "greekmod:block/grapevinegrown0"
+      "model": "greekmod:block/grapevinegrown0","y": 180
     },
     "age=0,east=false,north=false,south=true,up=true,west=false": {
       "model": "greekmod:block/grapevinegrown0"
@@ -25,10 +25,10 @@
       "model": "greekmod:block/grapevinegrown0"
     },
     "age=0,east=false,north=true,south=false,up=false,west=false": {
-      "model": "greekmod:block/grapevinegrown0"
+      "model": "greekmod:block/grapevinegrown0", "y": 180
     },
     "age=0,east=false,north=true,south=false,up=false,west=true": {
-      "model": "greekmod:block/grapevinegrown0"
+      "model": "greekmod:block/grapevinegrown0", "y": 270
     },
     "age=0,east=false,north=true,south=false,up=true,west=false": {
       "model": "greekmod:block/grapevinegrown0"
@@ -37,10 +37,10 @@
       "model": "greekmod:block/grapevinegrown0"
     },
     "age=0,east=false,north=true,south=true,up=false,west=false": {
-      "model": "greekmod:block/grapevinegrown0"
+      "model": "greekmod:block/grapevinegrown0", "y": 90
     },
     "age=0,east=false,north=true,south=true,up=false,west=true": {
-      "model": "greekmod:block/grapevinegrown0"
+      "model": "greekmod:block/grapevinegrown0", "y": 180
     },
     "age=0,east=false,north=true,south=true,up=true,west=false": {
       "model": "greekmod:block/grapevinegrown0"
@@ -49,7 +49,7 @@
       "model": "greekmod:block/grapevinegrown0"
     },
     "age=0,east=true,north=false,south=false,up=false,west=false": {
-      "model": "greekmod:block/grapevinegrown0"
+      "model": "greekmod:block/grapevinegrown0", "y": 270
     },
     "age=0,east=true,north=false,south=false,up=false,west=true": {
       "model": "greekmod:block/grapevinegrown0"
@@ -64,7 +64,7 @@
       "model": "greekmod:block/grapevinegrown0"
     },
     "age=0,east=true,north=false,south=true,up=false,west=true": {
-      "model": "greekmod:block/grapevinegrown0"
+      "model": "greekmod:block/grapevinegrown0", "y": 90
     },
     "age=0,east=true,north=false,south=true,up=true,west=false": {
       "model": "greekmod:block/grapevinegrown0"
@@ -76,7 +76,7 @@
       "model": "greekmod:block/grapevinegrown0"
     },
     "age=0,east=true,north=true,south=false,up=false,west=true": {
-      "model": "greekmod:block/grapevinegrown0"
+      "model": "greekmod:block/grapevinegrown0", "y": 270
     },
     "age=0,east=true,north=true,south=false,up=true,west=false": {
       "model": "greekmod:block/grapevinegrown0"
@@ -96,11 +96,12 @@
     "age=0,east=true,north=true,south=true,up=true,west=true": {
       "model": "greekmod:block/grapevinegrown0"
     },
+
     "age=1,east=false,north=false,south=false,up=false,west=false": {
       "model": "greekmod:block/grapevinegrown1"
     },
     "age=1,east=false,north=false,south=false,up=false,west=true": {
-      "model": "greekmod:block/grapevinegrown1"
+      "model": "greekmod:block/grapevinegrown1", "y": 90
     },
     "age=1,east=false,north=false,south=false,up=true,west=false": {
       "model": "greekmod:block/grapevinegrown1"
@@ -112,7 +113,7 @@
       "model": "greekmod:block/grapevinegrown1"
     },
     "age=1,east=false,north=false,south=true,up=false,west=true": {
-      "model": "greekmod:block/grapevinegrown1"
+      "model": "greekmod:block/grapevinegrown1","y": 180
     },
     "age=1,east=false,north=false,south=true,up=true,west=false": {
       "model": "greekmod:block/grapevinegrown1"
@@ -121,10 +122,10 @@
       "model": "greekmod:block/grapevinegrown1"
     },
     "age=1,east=false,north=true,south=false,up=false,west=false": {
-      "model": "greekmod:block/grapevinegrown1"
+      "model": "greekmod:block/grapevinegrown1", "y": 180, "x": 270
     },
     "age=1,east=false,north=true,south=false,up=false,west=true": {
-      "model": "greekmod:block/grapevinegrown1"
+      "model": "greekmod:block/grapevinegrown1", "y": 270
     },
     "age=1,east=false,north=true,south=false,up=true,west=false": {
       "model": "greekmod:block/grapevinegrown1"
@@ -133,10 +134,10 @@
       "model": "greekmod:block/grapevinegrown1"
     },
     "age=1,east=false,north=true,south=true,up=false,west=false": {
-      "model": "greekmod:block/grapevinegrown1"
+      "model": "greekmod:block/grapevinegrown1", "y": 90
     },
     "age=1,east=false,north=true,south=true,up=false,west=true": {
-      "model": "greekmod:block/grapevinegrown1"
+      "model": "greekmod:block/grapevinegrown1", "y": 180
     },
     "age=1,east=false,north=true,south=true,up=true,west=false": {
       "model": "greekmod:block/grapevinegrown1"
@@ -145,7 +146,7 @@
       "model": "greekmod:block/grapevinegrown1"
     },
     "age=1,east=true,north=false,south=false,up=false,west=false": {
-      "model": "greekmod:block/grapevinegrown1"
+      "model": "greekmod:block/grapevinegrown1", "y": 270
     },
     "age=1,east=true,north=false,south=false,up=false,west=true": {
       "model": "greekmod:block/grapevinegrown1"
@@ -160,7 +161,7 @@
       "model": "greekmod:block/grapevinegrown1"
     },
     "age=1,east=true,north=false,south=true,up=false,west=true": {
-      "model": "greekmod:block/grapevinegrown1"
+      "model": "greekmod:block/grapevinegrown1", "y": 90
     },
     "age=1,east=true,north=false,south=true,up=true,west=false": {
       "model": "greekmod:block/grapevinegrown1"
@@ -172,7 +173,7 @@
       "model": "greekmod:block/grapevinegrown1"
     },
     "age=1,east=true,north=true,south=false,up=false,west=true": {
-      "model": "greekmod:block/grapevinegrown1"
+      "model": "greekmod:block/grapevinegrown1", "y": 270
     },
     "age=1,east=true,north=true,south=false,up=true,west=false": {
       "model": "greekmod:block/grapevinegrown1"

@@ -2,6 +2,7 @@ package net.ashkun.greekmod.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeBuilder;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -12,6 +13,7 @@ import net.ashkun.greekmod.block.ModBlocks;
 import net.ashkun.greekmod.item.ModItems;
 
 import net.minecraft.data.recipes.*;
+import net.minecraftforge.common.extensions.IForgeItem;
 
 import java.util.List;
 import java.util.function.Consumer;
@@ -40,12 +42,20 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.BRONZE.get()), has(ModItems.BRONZE.get()))
                 .save(pWriter);
 
+
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BRONZE.get(),9)
                 .requires(ModBlocks.BRONZE_BLOCK.get())
                .unlockedBy(getHasName(ModBlocks.BRONZE_BLOCK.get()),has(ModBlocks.BRONZE_BLOCK.get()))
                 .save(pWriter);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CHEESE.get(),1).requires(ModItems.SALT.get())
+                .requires(Items.MILK_BUCKET)
+                .unlockedBy(getHasName(ModItems.SALT.get()), has(ModItems.SALT.get()))
+                .save(pWriter);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.JUNGLE_WOOD,4).requires(ModBlocks.FIG_WOOD.get());
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.JUNGLE_WOOD,4).requires(ModBlocks.FIG_LOG.get());
 
     }
 

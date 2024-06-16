@@ -8,6 +8,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.ashkun.greekmod.GreekMod;
@@ -24,14 +25,27 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.BRONZE);
         simpleItem(ModItems.BARLEY_SEEDS);
         simpleItem(ModItems.BARLEY);
-        evenSimplerBlockItem(ModBlocks.GRAPEVINEBLOCK);
 
+       // simpleBlockItem(ModBlocks.GRAPEVINEBLOCK);
+       // evenSimplerBlockItem(ModBlocks.GRAPEVINEBLOCK);
+        saplingItem(ModBlocks.FIG_SAPLING);
+    }
+
+    private  ItemModelBuilder saplingItem(RegistryObject<Block> item){
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(GreekMod.MOD_ID, "block/" + item.getId().getPath()));
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item){
 
         return withExistingParent(item.getId().getPath(), new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(GreekMod.MOD_ID, "item/" + item.getId().getPath()));
+    }
+    private ItemModelBuilder simpleBlockItem(RegistryObject<Block> block){
+
+        return withExistingParent(block.getId().getPath(), new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(GreekMod.MOD_ID, "item/" + block.getId().getPath()));
     }
 
 

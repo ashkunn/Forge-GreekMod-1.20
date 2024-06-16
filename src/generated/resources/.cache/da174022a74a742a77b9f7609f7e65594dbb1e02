@@ -1,1 +1,4 @@
-// 1.20.2	2024-05-26T01:25:07.566059	Tags for minecraft:block mod id greekmod
+// 1.20.2	2024-06-15T17:14:06.0257219	Tags for minecraft:block mod id greekmod
+625afd535fc19b58f5bd1d0785a0fbcc0869448d data/minecraft/tags/blocks/logs_that_burn.json
+370b639a09c25c540545c4a2f2ecdebf4b6b58c9 data/minecraft/tags/blocks/needs_iron_tool.json
+89ee9080ff98b5728c099b986a5ba07a79375966 data/minecraft/tags/blocks/planks.json

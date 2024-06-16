@@ -24,6 +24,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
 
+
+        this.tag(BlockTags.NEEDS_IRON_TOOL).add(ModBlocks.SALT_ORE.get());
+
 //        this.tag(ModTags.Blocks.METAL_DETECTOR_VALUABLES).add(ModBlocks.SAPPHIRE_BLOCK.get()).addTag(Tags.Blocks.ORES);
 //
 //        this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModBlocks.SAPPHIRE_BLOCK.get(),

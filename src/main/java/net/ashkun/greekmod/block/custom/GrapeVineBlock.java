@@ -1,5 +1,6 @@
 package net.ashkun.greekmod.block.custom;
 
+import net.ashkun.greekmod.item.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.Mth;
@@ -7,6 +8,7 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
@@ -14,18 +16,26 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.BonemealableBlock;
 import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.VineBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.phys.BlockHitResult;
+
+import java.util.function.ToIntFunction;
 
 public class GrapeVineBlock extends VineBlock implements BonemealableBlock {
 
     public static final int MAX_AGE = 1;
 
+
+
     public static final IntegerProperty AGE = BlockStateProperties.AGE_1;
+
+
     //public static final BooleanProperty HARVESTED = BooleanProperty.create("harvested");
     public GrapeVineBlock(Properties pProperties) {
         super(pProperties);
@@ -50,11 +60,16 @@ public class GrapeVineBlock extends VineBlock implements BonemealableBlock {
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos blockPos, Player player, InteractionHand hand, BlockHitResult result){
 
-//        if(!level.isClientSide() && hand == InteractionHand.MAIN_HAND && state.getValue(AGE) == 2){
-//
-//            level.setBlock(blockPos, state.cycle(HARVESTED), 3);
-//        }
-        return InteractionResult.SUCCESS;
+        if(!level.isClientSide() && hand == InteractionHand.MAIN_HAND && state.getValue(AGE) == 1){
+
+
+
+            level.setBlock(blockPos, this.getStateForAge(this.getAge(state) - 1), 3);
+            player.getInventory().add(new ItemStack(ModItems.GRAPE.get()));
+
+
+        }
+        return super.use(state,level,blockPos,player,hand,result);
     }
 
 

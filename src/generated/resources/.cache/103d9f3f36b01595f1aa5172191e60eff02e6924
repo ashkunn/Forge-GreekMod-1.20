@@ -1,4 +1,10 @@
-// 1.20.2	2024-06-03T17:42:21.198502	Registries
+// 1.20.2	2024-06-15T18:55:51.3482335	Registries
+fe497e8d8142549e1291467f58ddc18623a07475 data/greekmod/forge/biome_modifier/add_salt_ore.json
 c0046ae1fa16210b15b03299a694d01a30f6362c data/greekmod/forge/biome_modifier/add_tin_ore.json
-5bcfa6a53a03519e277b2a25b242288b01b33cfd data/greekmod/worldgen/configured_feature/tin_ore.json
+a9e55aa19cd94309627478ea7089d2c49256c1f3 data/greekmod/worldgen/configured_feature/end_sapphire_ore.json
+baa630b3c1aef7b26111cbaa0d8417e6522bc391 data/greekmod/worldgen/configured_feature/fig.json
+ed8c16db09b062a404d44e224b79e7baa690d37a data/greekmod/worldgen/configured_feature/salt_ore.json
+5888949d390042688576470647ef6375779d6781 data/greekmod/worldgen/configured_feature/tin_ore.json
+8d391662b342fdd587c84e74c3d3369eea3c0a27 data/greekmod/worldgen/placed_feature/end_tin_ore_placed.json
+c17ac8b134da5488425c9c25b8b303ce7c03c48c data/greekmod/worldgen/placed_feature/salt_ore_placed.json
 e77f9ee6d1a0cdbc39a7d4bcefe9db0c70a56f92 data/greekmod/worldgen/placed_feature/tin_ore_placed.json

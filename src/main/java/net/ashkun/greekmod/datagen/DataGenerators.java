@@ -1,7 +1,6 @@
 package net.ashkun.greekmod.datagen;
 
 
-import com.google.common.eventbus.Subscribe;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -23,7 +22,7 @@ public class DataGenerators {
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
-   //     generator.addProvider(event.includeServer(), new ModRecipeProvider(packOutput));
+        generator.addProvider(event.includeServer(), new ModRecipeProvider(packOutput));
 
     //   generator.addProvider(event.includeServer(), ModLootTableProvider.create(packOutput));
 

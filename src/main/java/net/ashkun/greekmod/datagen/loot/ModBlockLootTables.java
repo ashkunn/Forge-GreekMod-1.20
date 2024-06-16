@@ -52,7 +52,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.BARLEY_CROP.get(),createCropDrops(ModBlocks.BARLEY_CROP.get(),ModItems.BARLEY.get(), ModItems.BARLEY_SEEDS.get(), lootitemcondition$builder));
 
-        this.add(ModBlocks.GRAPEVINEBLOCK.get(),createCropDrops(ModBlocks.GRAPEVINEBLOCK.get(),ModItems.BARLEY.get(), ModItems.BARLEY_SEEDS.get(), lootitemcondition$builder));
+        //this.add(ModBlocks.GRAPEVINEBLOCK.get(),createCropDrops(ModBlocks.GRAPEVINEBLOCK.get(),ModItems.BARLEY.get(), ModItems.BARLEY_SEEDS.get(), lootitemcondition$builder));
+
+        this.createCopperLikeOreDrops(ModBlocks.SALT_ORE.get(),ModItems.SALT.get());
+
 
         this.dropSelf(ModBlocks.PINE_LOG.get());
         this.dropSelf(ModBlocks.PINE_WOOD.get());
@@ -60,10 +63,17 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.STRIPPED_PINE_WOOD.get());
         this.dropSelf(ModBlocks.PINE_PLANKS.get());
 
+
+        this.dropSelf(ModBlocks.FIG_LOG.get());
+        this.dropSelf(ModBlocks.FIG_WOOD.get());
+
+        this.dropSelf(ModBlocks.FIG_SAPLING.get());
+
         this.add(ModBlocks.PINE_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.BRONZE_BLOCK.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
-
+        this.add(ModBlocks.FIG_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.FIG_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
 
     }

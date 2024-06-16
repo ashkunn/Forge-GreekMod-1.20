@@ -22,11 +22,16 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
+
+
+
         this.tag(ItemTags.LOGS_THAT_BURN)
                 .add(ModBlocks.PINE_LOG.get().asItem())
                 .add(ModBlocks.PINE_WOOD.get().asItem())
                 .add(ModBlocks.STRIPPED_PINE_LOG.get().asItem())
-                .add(ModBlocks.STRIPPED_PINE_WOOD.get().asItem());
+                .add(ModBlocks.STRIPPED_PINE_WOOD.get().asItem())
+                .add(ModBlocks.FIG_LOG.get().asItem())
+                .add(ModBlocks.FIG_WOOD.get().asItem());
 
         this.tag(ItemTags.PLANKS)
                 .add(ModBlocks.PINE_PLANKS.get().asItem());

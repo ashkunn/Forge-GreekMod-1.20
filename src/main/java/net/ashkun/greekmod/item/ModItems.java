@@ -22,6 +22,13 @@ public class ModItems {
     public static final RegistryObject<Item> TIN = ITEMS.register("tin",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> SALT = ITEMS.register("salt",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> CHEESE = ITEMS.register("cheese", ()-> new Item(new Item.Properties().food(ModFoods.CHEESE)));
+
+    public static final RegistryObject<Item> GRAPE = ITEMS.register("grape", ()-> new Item(new Item.Properties().food(ModFoods.GRAPE)));
+
     public static final RegistryObject<Item>  BRONZE_HELMET = ITEMS.register("bronze_helmet",
             () -> new ArmorItem(ModArmorMaterials.BRONZE, ArmorItem.Type.HELMET, new Item.Properties()));
     public static final RegistryObject<Item>  BRONZE_CHESTPLATE = ITEMS.register("bronze_chestplate",

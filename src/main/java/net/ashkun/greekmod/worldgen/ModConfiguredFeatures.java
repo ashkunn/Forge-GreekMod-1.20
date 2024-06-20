@@ -2,6 +2,8 @@ package net.ashkun.greekmod.worldgen;
 
 import net.ashkun.greekmod.GreekMod;
 import net.ashkun.greekmod.block.ModBlocks;
+import net.ashkun.greekmod.worldgen.tree.custom.PineFoliagePlacer;
+import net.ashkun.greekmod.worldgen.tree.custom.PineTrunkPlacer;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;
@@ -45,12 +47,10 @@ public class ModConfiguredFeatures {
 
         register(context, PINE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.PINE_LOG.get()),
-                new StraightTrunkPlacer(5, 4, 3),
-
+                new PineTrunkPlacer(5, 4, 3),
                 BlockStateProvider.simple(ModBlocks.PINE_LEAVES.get()),
-                new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
-
-                new TwoLayersFeatureSize(1, 0, 2)).build());
+                new PineFoliagePlacer(ConstantInt.of(1), ConstantInt.of(0), 3),
+                new TwoLayersFeatureSize(1, 0, 1)).build());
     }
 
 

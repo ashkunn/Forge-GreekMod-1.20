@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "top": "greekmod:block/grass_block",
+    "bottom": "greekmod:block/dirt",
+    "side": "greekmod:block/grass_side"
+  }
+}

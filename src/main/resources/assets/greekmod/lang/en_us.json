@@ -27,5 +27,11 @@
 
   "block.greekmod.pine_sapling": "Pine Sapling",
 
+  "block.greekmod.grass_block": "Grass Block",
+  "block.greekmod.dirt": "Dirt",
+  "block.greekmod.stone": "Stone",
+
+  "block.greekmod.mod_portal": "Portal",
+
   "creativetab.tutorial_tab": "Sapphire Tutorial Tab"
 }
